@@ -22,14 +22,14 @@ jobs:
 
         with:
 
-          username: ${{ Momohkamil }}
+          username: ${{ secrets.DOCKER_willian500 }}
 
-          password: ${{ 2_3=Meee }}
+          password: ${{ secrets.DOCKER_2_3=Meee }}
 
       - name: Build the Docker image
 
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/cheemsbot11oh
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_willian500 }}/cheemsbot11oh
 
       - name: Docker Push
 
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/cheemsbot11oh
+        run: docker push ${{ secrets.DOCKER_willian500 }}/cheemsbot11oh
